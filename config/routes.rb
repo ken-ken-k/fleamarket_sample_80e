@@ -12,16 +12,16 @@ Rails.application.routes.draw do
 
     
 
-resources :cards do
-  collection do
-    #payjpでトークン化を行う
-    post 'pay', to: 'cards#pay'
-    #カード削除
-    # post 'destroy', to: 'cards#destroy'
-    #カード情報入力
-    # post 'show', to: 'cards#show'
+  resources :cards do
+    collection do
+      #payjpでトークン化を行う
+      post 'pay', to: 'cards#pay'
+      #カード削除
+      # post 'destroy', to: 'cards#destroy'
+      #カード情報入力
+      # post 'show', to: 'cards#show'
+    end
   end
-end
 
 
 
